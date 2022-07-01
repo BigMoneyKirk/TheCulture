@@ -1,10 +1,14 @@
 # TheCulture
 
-The Enlightened Culture is a higher level of content for the Black community in America. 
+The Enlightened Culture is a higher level of content for the Black community in America. An interactive land where black people can FINALLY be themselves.
+
+## FontAwesome
+
+Stevo, don't forget that you paid $99 for FontAwesome for a year (until about June 2023). Use it!
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng s -o` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
