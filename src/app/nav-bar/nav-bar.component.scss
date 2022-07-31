@@ -4,8 +4,16 @@
 }
 
 .nav-bar-link-container {
+    position: fixed;
+    top: 18.760px;
+    right: 8px;    
     display: flex;
     align-items: center;
+    border: solid;
+    border-radius: 45px;
+    padding: 0 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0, 0.5);
 }
 
 .nav-bar-link-container ul {
@@ -16,6 +24,16 @@
 .nav-bar-link-container ul li {
     list-style: none;
     padding-left: 15px;
+    transition: 1s;
+}
+
+.nav-bar-link-container ul li:hover {
+    font-size: large;
+    transform: translateY(-2px); // might take this out later -sk
+}
+
+.nav-bar-link-container ul li a {
+    color: burlywood;
 }
 
 .nav-bar-link-container ul li a:link {
