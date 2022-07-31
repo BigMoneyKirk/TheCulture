@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { MessageOfTheTimeComponent } from './home/message-of-the-time/message-of-the-time.component';
+import { TopMarginDirective } from './common/directives/top-margin.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    MessageOfTheTimeComponent
+    MessageOfTheTimeComponent,
+    TopMarginDirective
   ],
   imports: [
     BrowserModule,
