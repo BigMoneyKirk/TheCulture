@@ -1,14 +1,16 @@
-import { Directive, ElementRef, OnInit, Renderer2 } from '@angular/core';
+import { Directive, HostBinding, Input, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[topMargin]'
 })
 export class TopMarginDirective implements OnInit {
+  @HostBinding('style.marginTop') marginTop: string = '';
+  @Input() marginTopValue: string = `50px`;
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2) { }
+  constructor() { }
 
   ngOnInit() {
-    this.renderer.setStyle(this.elementRef.nativeElement, `margin-top`, `50px`);
+    this.marginTop = this.marginTopValue;
   }
 
 }
